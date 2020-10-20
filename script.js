@@ -341,20 +341,24 @@ event.preventDefault();
 let fahrentheitTemperature = (celsiusTemperature * 9) / 5 + 32;
 let temperatureElement = document.querySelector("#temperature");
 temperatureElement.innerHTML = Math.round(fahrentheitTemperature);
+celsiusLink.classList.remove("active");
+fahrenheitLink.classList.add("active");
+
 }
 
 function showCelsius(event) {
 event.preventDefault();
 let temperatureElement = document.querySelector("#temperature");
 temperatureElement.innerHTML = Math.round(celsiusTemperature);
-
+celsiusLink.classList.add("active");
+fahrenheitLink.classList.remove("active");
 }
 
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", showFahrenheit)
+fahrenheitLink.addEventListener("click", showFahrenheit);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", showCelsius)
+celsiusLink.addEventListener("click", showCelsius);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);

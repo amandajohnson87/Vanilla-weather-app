@@ -55,6 +55,15 @@ li:first-letter {
   left: -10px;
 }
 
+.units .active {
+  color: black;
+  cursor: default;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
+
 .weatherIcon {
   padding: 0;
   margin: 0 auto;
