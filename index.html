@@ -40,10 +40,21 @@
 </h1>
 
 <div class="row current-weather-data">
-    <div class="col-6">
+    <div class="col-2">
+       <ul>
+           <li>
+            <i class="fas fa-cloud-sun-rain weatherIcon"> </i>
+           </li>
+       </ul>
+   </div>
+
+    <div class="col-5">
         <ul>
             <li id="date">
                 Monday 00:00
+            </li>
+            <li id="description">
+                Partly cloudy
             </li>
             <li>
                 <span class="temperature" id="temperature">
@@ -56,20 +67,14 @@
                 </a>
 
             </li>
-            <li id="description">
-                Partly cloudy
-            </li>
+           
         </ul>
-        <div class="clearfix">
-            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Partly cloudy icon"
-                class="weatherIcon float-left" />
-            <div class="float-left">
+      
 
-            </div>
-        </div>
+            
 
     </div>
-    <div class="col-6">
+    <div class="col-5">
 
         <ul>
             <li>
@@ -79,37 +84,43 @@
                 Wind: <span id="wind">0</span> km/h
             </li>
         </ul>
-</div>
-
-   
+        
     </div>
-        <div class="row forecast">
-            <div class="col day">
-                Weekday
-                <br />
-                <i class="fas fa-cloud-sun-rain"> </i>
-                12° / <strong>23°</strong>
-            </div>
-            <div class="col day">
-                Weekday
-                <br />
-                <i class="fas fa-cloud-sun-rain"> </i>
-                12° / <strong>23°</strong>
-            </div>
-            <div class="col day">
-                Weekday
-                <br />
-                <i class="fas fa-cloud-sun-rain"> </i>
-                12° / <strong>23°</strong>
-            </div>
-            <div class="col day">
-                Weekday
-                <br />
-                <i class="fas fa-cloud-sun-rain"> </i>
-                12° / <strong>23°</strong>
-            </div>
+
+    <div class="row forecast">
+        <div class="col day">
+            Weekday
+            <br />
+            <i class="fas fa-cloud-sun-rain"> </i>
+            12° / <strong>23°</strong>
+        </div>
+        <div class="col day">
+            Weekday
+            <br />
+            <i class="fas fa-cloud-sun-rain"> </i>
+            12° / <strong>23°</strong>
+        </div>
+        <div class="col day">
+            Weekday
+            <br />
+            <i class="fas fa-cloud-sun-rain"> </i>
+            12° / <strong>23°</strong>
+        </div>
+        <div class="col day">
+            Weekday
+            <br />
+            <i class="fas fa-cloud-sun-rain"> </i>
+            12° / <strong>23°</strong>
+        </div>
+</div>
+</div>
+   
+    
+        
          
         
+    </div>
+
     </div>
    
     <script src="script.js"></script>
