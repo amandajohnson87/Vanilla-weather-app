@@ -1,14 +1,14 @@
-function formatDate(date) {
-  let hours = currentTime.getHours();
-  if (hours < 10) {
+function formatDate(timestamp) {
+let date = new Date(timestamp);
+let hours = date.getHours();
+if (hours < 10) {
     hours = `0${hours}`;
-  }
-  let minutes = currentTime.getMinutes();
-  if (minutes < 10) {
-    minutes = `0${minutes}`;
-  }
-  let dayIndex = currentTime.getDay();
-  let days = [
+}
+let minutes = date.getMinutes();
+if (minutes < 10) {
+    mintes = `0${minutes}`;
+}
+let days = [
     "Sunday",
     "Monday",
     "Tuesday",
@@ -18,21 +18,25 @@ function formatDate(date) {
     "Saturday",
     "Sunday"
   ];
-  let day = days[dayIndex];
-  return `${days[dayIndex]} ${hours}:${minutes}`;
+let day = [date.getDay()];
+return `${day} ${hours}:${minutes}`;
 }
+
 
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(
-    response.data.main.temp
-  );
+    response.data.main.temp);
+  
   document.querySelector("#humidity").innerHTML = response.data.main.humidity;
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+document.querySelector("#date").innerHTML = formatDate(response.data.dt * 1000);
+
+    
 }
 
 function handleSubmit(event) {
@@ -68,9 +72,5 @@ searchForm.addEventListener("submit", handleSubmit);
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-let dateElement = document.querySelector("#date");
-let currentTime = new Date();
-
-dateElement.innerHTML = formatDate(currentTime);
 
 searchCity("Berlin");
