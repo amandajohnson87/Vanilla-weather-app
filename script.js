@@ -46,7 +46,6 @@ function handleSubmit(event) {
   searchCity(city);
 }
 
-//
 
 function getCurrentLocation(event) {
   event.preventDefault();
@@ -59,7 +58,7 @@ function searchLocation(position) {
   let units = "metric";
   let apiKey = "961667857ac92e50fc2594f42d82b1ee";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
-  axios.get(apiUrl).then(displayCurrentConditions);
+  axios.get(apiUrl).then(displayWeatherCondition);
 }
 
 function displayCurrentConditions(response) {
@@ -74,7 +73,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
 
 let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("submit", getCurrentLocation);
+currentLocationButton.addEventListener("click", getCurrentLocation);
 
 let dateElement = document.querySelector("#date");
 let currentTime = new Date();
