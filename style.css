@@ -23,11 +23,12 @@ h1 {
   line-height: 1;
   margin-top: 20px;
   padding: 0px;
+  margin-left: 0px;
 }
 
 ul {
   padding: 0;
-  max-width: 60%;
+  max-width: 50%;
 }
 li {
   font-family: "Quicksand", sans-serif;
@@ -47,4 +48,38 @@ li {
   position: relative;
   top: -10px;
   left: -10px;
+}
+
+.weatherIcon {
+  width: 100px;
+}
+
+.forecast {
+  background: white;
+  width: fit-content;
+  height: fit-content;
+  text-align: center;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 20px 10px 20px 10px;
+  border-radius: 3px;
+}
+.day {
+  border: 1px solid black;
+  width: 150px;
+  border-radius: 1px;
+  padding: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+}
+.row {
+  margin: 0 auto;
+  padding: 0;
+}
+.fas {
+  display: block;
+  margin: 0 auto;
+  color: grey;
+  font-size: 50px;
+  padding: 20px;
 }

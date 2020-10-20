@@ -14,11 +14,11 @@
     </head>
 <body>
     <div class="container">
-        <span class="weatherApp">
+        <div class="weatherApp">
 
             <form class="search-form" id="search-form">
                 <div class="row">
-                    <div class="col-5">
+                    <div class="col-6">
                         <input type="search" placeholder="Search for a city" class="form-control" autofocus="on" autocomplete="off"
                             id="city-input" />
                     </div>
@@ -26,7 +26,7 @@
                         <input type="submit" value="Search" class="form-control btn btn-primary" id="searchButton" />
             
                     </div>
-                    <div class=row>
+                    <div class=row-3>
                         <input type="submit" value="Current location" class="form-control btn btn-warning"
                             id="current-location-button" />
             
@@ -77,7 +77,36 @@
                 Wind: <span id="wind">0</span> km/h
             </li>
         </ul>
-</span>
+
+   
+    </div>
+        <div class="row forecast">
+            <div class="col day">
+                Weekday
+                <br />
+                <i class="fas fa-cloud-sun-rain"> </i>
+                12° / <strong>23°</strong>
+            </div>
+            <div class="col day">
+                Weekday
+                <br />
+                <i class="fas fa-cloud-sun-rain"> </i>
+                12° / <strong>23°</strong>
+            </div>
+            <div class="col day">
+                Weekday
+                <br />
+                <i class="fas fa-cloud-sun-rain"> </i>
+                12° / <strong>23°</strong>
+            </div>
+            <div class="col day">
+                Weekday
+                <br />
+                <i class="fas fa-cloud-sun-rain"> </i>
+                12° / <strong>23°</strong>
+            </div>
+         
+        </div>
     </div>
    
     <script src="script.js"></script>
