@@ -1,0 +1,49 @@
+body {
+  padding: 20px;
+  background: #deeaf1;
+}
+
+.weatherApp {
+  border: 1px solid white;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+}
+
+.search-form {
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-family: "Quicksand", sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  max-width: 50%;
+  line-height: 1;
+  margin-top: 20px;
+  padding: 0px 15px;
+}
+ul {
+  padding: 0;
+  max-width: 60%;
+}
+li {
+  font-family: "Quicksand", sans-serif;
+  font-size: 20px;
+  line-height: 1;
+  list-style-type: none;
+}
+
+.temperature {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
+  margin-right: 5px;
+}
+
+.units {
+  position: relative;
+  top: -10px;
+  left: -10px;
+}
