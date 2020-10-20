@@ -10,7 +10,50 @@
 </head>
 <body>
     <div class ="container">
-    <h1>Vanilla weather app</h1>
+<h1 id="city">
+    Vancouver
+</h1>
+
+<div class="row">
+    <div class="col-6">
+        <ul>
+            <li id="date">
+                Monday 00:00
+            </li>
+            <li>
+                <span class="temperature" id="temperature">
+                    18
+                </span>
+                <span class="units"> ° C | <a href="#">
+                        <span id="fahrenheit-link">° F
+                        </span>
+                </span>
+                </a>
+
+            </li>
+            <li id="description">
+                Partly cloudy
+            </li>
+        </ul>
+        <div class="clearfix">
+            <img src="https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png" alt="Partly cloudy icon"
+                class="weatherIcon float-left" />
+            <div class="float-left">
+
+            </div>
+        </div>
+
+    </div>
+    <div class="col-6">
+
+        <ul>
+            <li>
+                Humidity: <span id="humidity">00</span>%
+            </li>
+            <li>
+                Wind: <span id="wind">0</span> km/h
+            </li>
+        </ul>
 
     </div>
    
