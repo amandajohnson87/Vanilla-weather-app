@@ -21,8 +21,8 @@ h1 {
   font-weight: bold;
   max-width: 100%;
   line-height: 1;
-  margin-top: 20px;
   padding: 0px;
+  margin-top: 20px;
   margin-left: 9px;
 }
 
@@ -30,6 +30,7 @@ ul {
   padding: 0;
   max-width: 50%;
 }
+
 li {
   font-family: "Quicksand", sans-serif;
   font-size: 18px;
