@@ -68,7 +68,7 @@ function displayCurrentConditions(response) {
   temperatureElement.innerHTML = `${temperature}`;
 }
 
-searchCity("Vancouver");
+
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
@@ -80,3 +80,5 @@ let dateElement = document.querySelector("#date");
 let currentTime = new Date();
 
 dateElement.innerHTML = formatDate(currentTime);
+
+searchCity("Berlin");
