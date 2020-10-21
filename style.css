@@ -1,6 +1,7 @@
 body {
   padding: 20px;
   background: #deeaf1;
+  font-family: "Quicksand", sans-serif;
 }
 
 .weatherApp {
@@ -91,24 +92,27 @@ li:first-letter {
   margin: 0 auto;
   padding: 0;
 }
-.fas {
-  display: block;
-  margin: 0 auto;
-  color: grey;
-  font-size: 50px;
-  padding: 20px;
-}
 
 .col-2 {
   margin-left: 0;
   padding-left: 0;
-  width: 100px;
+  padding-right: 0;
 }
 
-.col-5 {
-  margin-left: 0;
-  margin-right: 0;
-  padding-left: 0;
-  padding-right: 0;
-  width: 250px;
+h3 {
+  font-size: 14px;
+  text-align: center;
+}
+
+.weather-forecast-temperature {
+  text-align: center;
+  font-size: 14px;
+}
+
+.fas {
+  text-align: center;
+  padding: 0px;
+  color: grey;
+  font-size: 50px;
+  padding: 20px;
 }
