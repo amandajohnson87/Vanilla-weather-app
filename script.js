@@ -295,7 +295,6 @@ return `${day} ${hours}:${minutes}`;
 
 
 function displayWeatherCondition(response) {
-    console.log
  let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
 let countryElement = document.querySelector("#country");
@@ -378,8 +377,10 @@ function searchLocation(position) {
   let apiKey = "961667857ac92e50fc2594f42d82b1ee";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=${units}`;
   axios.get(apiUrl).then(displayWeatherCondition);
+  
+apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
-
 function showFahrenheit(event) {
 event.preventDefault();
 let fahrentheitTemperature = (celsiusTemperature * 9) / 5 + 32;
